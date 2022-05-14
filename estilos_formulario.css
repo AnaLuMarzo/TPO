@@ -1,0 +1,72 @@
+/* Fuente de google */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  
+  font-family: sans-serif;
+  line-height: 1.5;
+ font-family: 'Nunito', sans-serif;  
+  
+}
+
+.cover {
+  background-image: linear-gradient(90deg, rgba(0, 70, 58, 0.8), rgba(0, 80, 40, 0.7) ),url(./imagenes/rsz_mads-schmidt-ti-jidxqk3c-unsplash.jpg);
+  color: white;
+  background-size: cover; /*redimenciona la imagen dependiendo del tamaño de la pantalla*/
+  }
+
+/* Añade un corazón en reemplazo de las comillas <q> */
+
+header{
+  text-align: center;
+  }
+
+form {
+    display: block;
+    margin-top: 0em; 
+ }
+
+#survey-form {
+  background: #218c74;
+  padding: 20px 30px;
+ /*le agrego esto p que sea responsivo y p centrar el formulario:*/
+  width: 100%; /*p q abarque todo el ancho correspodiente a su div contenedor. Esto es sobre todo p q ocupe todo el espacio en pantallas pequeñas*/
+  max-width: 600px; /*p q en pantallas más grandes el formulario no se estire demasiado y matenga sus elementos no ocupen todo el espacio disponible*/
+  margin: 0 auto; /*par centrar el formulario: cuadrado verde y lo q está adentro*/
+  display: flex; /*Usando flexbox alineamos los elementos tanto los input como el botón uno abajo del otro y centrandolos dentro del formulario para poner los elementos uno abajo del otro y centrar los inputs dentro del form.*/
+  flex-direction: column;
+  justify-content: center;
+  aspect-ratio: 2px;
+ }
+
+.form-group {
+    margin: 0.3rem 0.2rem;
+    padding: 0.1rem;
+  color: white;
+}
+
+label {
+  
+    align-items: center;
+    font-size: 1.12rem;
+    margin-bottom: 0.4rem;
+}
+
+@media (min-width: 480px) {
+    form {
+    padding: 2.5rem;
+      }
+}

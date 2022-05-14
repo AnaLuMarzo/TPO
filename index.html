@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./imagenes/Mi_guia_eco-removebg-preview.png"/>
+
+    <title>Mi guia Eco</title>
+    <!-- linkeo el archivo de estilos -->
+    <link rel="stylesheet" href="/estilos.css" />
+  </head>
+
+  <body>
+    <header>          
+        <!-- Logo arriba izq-->
+      <nav class="navbar">        
+         <div class="logo"><a class="navbar-brand" href="./index.html"><img
+          src="./imagenes/Mi guia eco.png"
+          alt="productos naturales varios en frascos de vidrio y bolsas de tela"
+          height="80"
+          class="logo"
+        /></a></div>
+        
+        <!--Barra de navegacion -->
+        <ul class="nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Inicio</a> <!--me devuelve a la página principal poniendo la /-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mapa">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tips eco.html">Tips Eco</a> <!--esto se lo llama LINKS RELATIVO: porq sin importar en q dominio estén son relativos al documento actual y siempre van a funcionar, los otros son ABSOLUTOS: cuando se coloca toda la direccion de la pág web si esta se mueve tendríamos q cambiar todo el link por completo-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tips eco.html">Eco Shop</a> <!--esto se lo llama LINKS RELATIVO: porq sin importar en q dominio estén son relativos al documento actual y siempre van a funcionar, los otros son ABSOLUTOS: cuando se coloca toda la direccion de la pág web si esta se mueve tendríamos q cambiar todo el link por completo-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#acercade">Acerca de</a> 
+            <li class="nav-item">
+              <a class="nav-link" href="formulario.html">Formulario opcional!</a>
+            </li>
+          </li>
+        </ul>
+      </nav>
+      <!--div: se usa para agrupar elementos, justify p q centre los contenidos en el eje x, align en el eje y y flex-column p q se pongan uno abajo del otro-->
+      <div class="cover">
+        <h1 class="title">
+          Mi guia Eco
+        </h1>
+        <p>
+          La mejor guía de tips y productos ecológicos
+        </p>
+      </div>
+    </header>
+    <!--Presentacion de la empresa-->
+    <section>
+      <div class="container" id="acercade">
+        <img
+          src="./imagenes/rsz_noah-buscher-x8zstuks2pm-unsplash.jpg"
+          alt="dos manos agarrando una plantita"
+          height="250"
+          class="imagen"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          rhoncus elit nisi. Nam vulputate lorem eget cursus dictum. Suspendisse
+          accumsan gravida justo, in mattis libero rutrum porta. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Phasellus id euismod turpis. Morbi molestie magna sed
+          diam accumsan rutrum. Pellentesque habitant morbi tristique senectus
+          et netus et malesuada fames ac turpis egestas. Nulla ac tortor
+          vulputate, ultrices lectus ac, egestas lacus. In sit amet sapien et
+          libero auctor consequat at vel diam. In ultrices malesuada augue. In
+          convallis ante in mauris cursus, eget ultrices arcu pharetra.
+        </p>
+        <p>
+          Nulla gravida tellus at finibus lacinia. Sed sollicitudin aliquam
+          congue. Phasellus mauris arcu, sagittis id tempus at, eleifend a enim.
+          In sit amet nisi vitae magna convallis consequat. Nulla quis nisl
+          libero. Maecenas ac mattis neque, feugiat convallis eros. Proin
+          volutpat pulvinar vestibulum. Mauris nec mollis tortor.
+        </p>
+      </div>
+    </section>
+    <!--SLIDER CON FOTOS-ANIMACION-->
+    <section>
+      <div class="container">
+        <div class="slider">
+          <div class="slider-container">
+            <div
+              class="image-container"
+              style="
+                background-image: url(./imagenes/rsz_gareth-hubbard-z_fl2kybrm0-unsplash.jpg);
+              "
+              title="cocina con alacena llena de productos orgánicos en frascos de vidrio"
+            ></div>
+
+            <div
+              class="image-container"
+              style="
+                background-image: url(./imagenes/rsz_dan-cristian-padure-miyzdphuyy0-unsplash.jpg);
+              "
+              title="frutas y verduras orgánicas sobre una mesa"
+            ></div>
+
+            <div
+              class="image-container"
+              style="
+                background-image: url(./imagenes/rsz_shawnee-wilborn-tmt-m2zecrc-unsplash.jpg);
+              "
+              title="productos cero-waste para el cuidado de la piel"
+            ></div>
+
+            <div
+              class="image-container"
+              style="
+                background-image: url(./imagenes/rsz_maddi-bazzocco-tozquhd8l38-unsplash.jpg);
+              "
+              title="bañera con velas y productos naturales para bañarse"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section>
+        <div class="row">
+
+          <!--es lo del sistema de grillas-->
+         <div class="contacto">
+            <h4>
+              Cambia tu estilo de vida a uno mas ecológico!
+            </h4>
+            <p>Navega por nuestra página web y descubre como lograrlo.</p>
+
+            <a href="#mapa">Ir al mapa</a>
+          </div>
+        </div> 
+        
+        <!--Eco shop y Eco tips-->
+        <!--    CARDS   -->
+    <section>
+      <div class="container">
+
+        <div class="row">
+          <!--pongo la card adentro de container p q quede una separación mas prolija.-->
+
+          <!--card Eco tips-->
+          <div class="">
+            <!--col-12: por defecto la grilla tiene 12 columnas, entonces col-12 significa q cada card ocupa todo lo disponible, está bien p un telefono. col-sm(cuantas columnas de la grilla vamos a ocupar en tablets)-6: por ej la mitad estaría bien. P/pantallas mas grandes quiero q ocupe 4 de las grillas. p/las muy grandes col-lg-3. mt-2: margen de arriba de 2-->
+            <div class="card">
+              <!--con este truco hacemos q las imagenes se vean mas alineadas:-->
+              <div
+                title="Bolsa de tela con productos orgánicos"
+                class="cover cover-small"
+                style="background-image:url(./imagenes/rsz_priscilla-du-preez-L3lznpRPZbI-unsplash.jpg);"
+              >
+                <!--acá podemos sobreescribir y decir que la url que queremos es la de la imagen 3 de la maq de afeitar-->
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Eco Tips</h5>
+                <p class="card-text">
+                  Los mejores consejos y tips que harán tu estilo de vida más
+                  ecológico.
+                </p>
+                <a href="./tips eco.html" class="btn">Visitar</a>
+              </div>
+            </div>
+          </div>
+         
+          <!--card eco-shop-->
+          <div class="">
+            <div class="card">
+              <div
+                title="Maquinita de afeitar metálica"
+                class="cover cover-small"
+                style="background-image:url(https://cdn.glitch.com/5af3e49d-8e32-43d7-b550-d37aae4808f2%2Frsz_nacho-fernandez-quxbqxvgipa-unsplash.jpg?v=1621450194172)"
+              >
+                <!--acá podemos sobreescribir y decir que la url que queremos es la de la imagen 3 de la maq de afeitar-->
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Eco Shop</h5>
+                <p class="card-text">
+                  Tienda ecológica, encontrarás las mejores marcas para comprar
+                  productos.
+                </p>
+                <a href="./tips eco.html" class="btn">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!--Mini formulario: ingreso del mail-->
+        <form action="">
+          <label for="email">Dejanos tu Correo electrónico para enviarte las novedades!</label>
+          <div class="d-flex">
+            <!--por defecto alinea los elementos uno al lado del otro (el boton enviar esta pegado a la caja donde el usuario escribe), pero no queremos eso queremos q el control ocupe tanto espacio como el boton deje disponible, para eso hay una clase q se llama flex-fill (llena tanto espacio q sea posible ocupar, voy a Utilities->flex->fill)-->
+            <!--con el flex yflex-box no permite en una pag html es ordenar los elementos en una dimension (horizontal o vertical), en este caso queremos horizontalmente-->
+            <div class="flex-fill">
+              <!--action: donde se va a enviar el formulario-->
+              <input type="email" id="email" class="form-control" />
+              <!--es  muy importante que el for de label sea = al id del input-->
+            </div>
+            <button type="submit" class="boton">
+              <!--el atributo type tiene q estar como submit p q este botón al presionarse envié el formulario-->
+              Enviar
+            </button>
+            <!--por defecto el flex ordena uno al lado del otro-->
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--COLOCO EL MAPA-->
+    <div class="container" id="mapa"> <!--existe un tipo de LINK q es con identificadores (id) y dentro de mi misma pag web en por ej "ir al mapa" o "ubicacion " uso ese identificador: #mapa-->
+      <h4>
+        Te esperamos en:
+      </h4>
+      <p>
+        Av. Francia 1000-902, B1661BPW, B1661BPW Bella Vista, Provincia de
+        Buenos Aires.
+      </p>
+      <div class="responsive-iframe"> <!--p solucionar el problema de q se acomode el mapa según el tamaño de la pantalla-->    
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6570.977293788218!2d-58.68568444325563!3d-34.56650035776501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbc3612d29edb%3A0x312dcac6902ac434!2sCorredor%20Aerobico%20Bella%20Vista!5e0!3m2!1ses!2sar!4v1622743917458!5m2!1ses!2sar"
+        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+      ></iframe>
+      </div>
+    </div>
+
+      <!--PRESENTACION DEL EQUIPO-->
+      <section>
+        <div class="container">
+          <h2>Conoce al equipo</h2>
+          <p>Juntos hacemos que tu dia mejore del modo más ecológico posible</p>
+          <div class="row">
+            <!--GRID-->
+            <div class="">
+              <div class="card">
+                <!--al poner inline-block, cambio el display por este va a ser mas facil centrar este elemento si colocamos text-center acá-->
+                <div
+                  class="avatar"
+                  style="
+                    background-image: url(https://cdn.glitch.com/5af3e49d-8e32-43d7-b550-d37aae4808f2%2Frsz_sandra-gabriel-c32ivg-m2ew-unsplash.jpg?v=1623092994770);
+                  "
+                ></div>
+                <h4 class="">MarBihu</h4>
+                <span class="badge">CEO</span>
+                <!--uso badge: los cartelitos-->
+              </div>
+            </div>
+  
+            <div class="">
+              <div class="card">
+                <!--al poner inline-block, cambio el display por este va a ser mas facil centrar este elemento si colocamos text-center acá-->
+                <div
+                  class="avatar"
+                  style="
+                    background-image: url(https://cdn.glitch.com/5af3e49d-8e32-43d7-b550-d37aae4808f2%2Frsz_jason-moyer-imkynljk9je-unsplash.jpg?v=1623092993688);
+                  "
+                ></div>
+                <h4 class="">JLM</h4>
+                <span class="badge">Jefe</span>
+                <!--uso badge: los cartelitos-->
+              </div>
+            </div>
+  
+            <div class="col-12 col-sm-6 col-md-4 mt-2">
+              <div class="card">
+                <!--al poner inline-block, cambio el display por este va a ser mas facil centrar este elemento si colocamos text-center acá-->
+                <div
+                  class="avatar"
+                  style="
+                    background-image: url(https://cdn.glitch.com/5af3e49d-8e32-43d7-b550-d37aae4808f2%2Frsz_img-20171019-wa0013.jpg?v=1623104526818);
+                  "
+                ></div>
+                <h4 class="">Nina</h4>
+                <span class="badge">Quality manager</span>
+                <!--uso badge: los cartelitos-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  </body>
+
+  <footer>
+    <p>Derechos reservados 2022-Ana Lucia Marzocca</p>
+  </footer>
+</html>

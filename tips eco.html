@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./imagenes/Mi_guia_eco-removebg-preview.png"/>
+
+    <title>Tips Eco y Eco Shop</title>
+    <!-- linkeo el archivo de estilos -->
+    <link rel="stylesheet" href="./estilos_tipsEco.css" />
+  </head>
+  <body>
+    <header>
+      <!-- esta es la barra de nafondo-->
+      <nav class="navbar">
+        <a class="navbar-brand" href="./index.html"><img
+          src="./imagenes/Mi guia eco.png"
+          alt="productos naturales varios en frascos de vidrio y bolsas de tela"
+          height="100"
+          class="logo"
+        /></a>
+        <!--esto sería la navegacion -->
+        <ul class="nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Inicio</a> <!--me devueleve a la página principal poniendo la /-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mapa">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tips eco.html">Tips Eco</a> <!--esto se lo llama LINKS RELATIVO: porq sin importar en q dominio estén son relativos al documento actual y siempre van a funcionar, los otros son ABSOLUTOS: cuando se coloca toda la direccion de la pág web si esta se mueve tendríamos q cambiar todo el link por completo-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tips eco.html">Eco Shop</a> <!--esto se lo llama LINKS RELATIVO: porq sin importar en q dominio estén son relativos al documento actual y siempre van a funcionar, los otros son ABSOLUTOS: cuando se coloca toda la direccion de la pág web si esta se mueve tendríamos q cambiar todo el link por completo-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#acercade">Acerca de</a> 
+            <li class="nav-item">
+              <a class="nav-link" href="formulario.html">Formulario opcional!</a>
+            </li>
+          </li>
+        </ul>
+      </nav>
+      <!--div: se usa para agrupar elementos, justify p q centre los contenidos en el eje x, align en el eje y y flex-column p q se pongan uno abajo del otro-->
+      <div
+        class="cover justify-content-center align-items-center flex-column"
+      >
+        <h1 class="title">
+          Tips Eco y Eco Shop
+        </h1>
+        <p>
+          Los mejores tips Ecológicos y las mejores Eco ofertas para vos!
+        </p>
+  
+      </div>
+    </header>
+      <!--Consejos ecologicos-->
+      <section>
+        <div class="container">
+          <img
+            src="./imagenes/rsz_priscilla-du-preez-l3lznprpzbi-unsplash.jpg"
+            alt="productos naturales varios en frascos de vidrio y bolsas de tela"
+            height="250"
+            class="float-right ml-4"
+          />
+          <!--queremos q la imagen fluya (float) con el texto-->
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            rhoncus elit nisi. Nam vulputate lorem eget cursus dictum. Suspendisse
+            accumsan gravida justo, in mattis libero rutrum porta. Pellentesque
+            habitant morbi tristique senectus et netus et malesuada fames ac
+            turpis egestas. Phasellus id euismod turpis. Morbi molestie magna sed
+            diam accumsan rutrum. Pellentesque habitant morbi tristique senectus
+            et netus et malesuada fames ac turpis egestas. Nulla ac tortor
+            vulputate, ultrices lectus ac, egestas lacus. In sit amet sapien et
+            libero auctor consequat at vel diam. In ultrices malesuada augue. In
+            convallis ante in mauris cursus, eget ultrices arcu pharetra.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <img
+            src="./imagenes/rsz_viktor-talashuk-a7ducc6kd90-unsplash.jpg"
+            alt="productos naturales varios en frascos de vidrio y bolsas de tela"
+            height="250"
+            class="float-right ml-4"
+          />
+          <!--queremos q la imagen fluya (float) con el texto-->
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            rhoncus elit nisi. Nam vulputate lorem eget cursus dictum. Suspendisse
+            accumsan gravida justo, in mattis libero rutrum porta. Pellentesque
+            habitant morbi tristique senectus et netus et malesuada fames ac
+            turpis egestas. Phasellus id euismod turpis. Morbi molestie magna sed
+            diam accumsan rutrum. Pellentesque habitant morbi tristique senectus
+            et netus et malesuada fames ac turpis egestas. Nulla ac tortor
+            vulputate, ultrices lectus ac, egestas lacus. In sit amet sapien et
+            libero auctor consequat at vel diam. In ultrices malesuada augue. In
+            convallis ante in mauris cursus, eget ultrices arcu pharetra.
+          </p>
+        </div>
+      </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <!--es lo del sistema de grillas-->
+          <div class="col-12 col-sm-6">
+            <h4>
+              Cambia tu estilo de vida a uno mas ecológico!
+            </h4>
+            <p>Navega por nuestra página web y descubre como lograrlo.</p>
+            <!--col-12 para q el movil ocupe todo lo disponible, col-sm-6 p q apartir de mas o menos las tablets ocupen la mitad-->
+            <a href="#mapa">Ir al mapa</a>
+          </div>
+        </div> 
+        <!--FORMULARIO: ingreso del mail-->
+        <form action="">
+          <label for="email">Dejanos tu Correo electrónico para enviarte las novedades!</label>
+          <div class="d-flex">
+            <!--por defecto alinea los elementos uno al lado del otro (el boton enviar esta pegado a la caja donde el usuario escribe), pero no queremos eso queremos q el control ocupe tanto espacio como el boton deje disponible, para eso hay una clase q se llama flex-fill (llena tanto espacio q sea posible ocupar, voy a Utilities->flex->fill)-->
+            <!--con el flex yflex-box no permite en una pag html es ordenar los elementos en una dimension (horizontal o vertical), en este caso queremos horizontalmente-->
+            <div class="flex-fill mr-2">
+              <!--seria margin right en bootstrap-->
+              <!--lo que me dice bootstrap que ponga en la seccion de forms-->
+              <!--action: donde se va a enviar el formulario-->
+
+              <input type="email" id="email" class="form-control" />
+              <!--es  muy importante que el for de label sea = al id del input-->
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <!--el atributo type tiene q estar como submit p q este botón al presionarse envié el formulario-->
+              Enviar
+            </button>
+            <!--por defecto el flex ordena uno al lado del otro-->
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--   TIRA DE PRODUCTOS   -->
+    <section>
+      <div class="container" id="stripe">
+        <div class="product-stripe">
+          <div class="stripe-container">
+            <!--necesito 3 div y dentro va la tira de productos-->
+            <!--similar a lo q se hizo en cards, asi q copio y pego-->
+            <div class="card">
+              <div
+                title="cepillo de dientes de bambu"
+                class="cover cover-small"
+                style="background-image:url(https://cdn.glitch.com/5af3e49d-8e32-43d7-b550-d37aae4808f2%2Frsz_superkitina-rct928gibom-unsplash.jpg?v=1622644750346)"
+              ></div>
+              <div class="card-body">
+                <h5 class="card-title">Box nº1: productos de higiene bucal</h5>
+                <span class="badge bg-info text-dark">$1400</span
+                ><!--voy a Bootstrap a components->Badge(insignia) es como una cajita donde por ej pongo el precio del producto-->
+                <p class="card-text2">
+                  <strong>Contiene:</strong> 2 (dos) cepillos de bambú, pasta
+                  dental ecológica, hilo dental vegetal, portacepillo de bambú.
+                </p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div
+                title="copita menstrual"
+                class="cover cover-small"
+                style="background-image:url(https://cdn.glitch.com/5af3e49d-8e32-43d7-b550-d37aae4808f2%2Frsz_inciclo-zh7mrqssarq-unsplash.jpg?v=1622644749071)"
+              ></div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Box nº2: productos de higiene femenina
+                </h5>
+                <span class="badge bg-info text-dark">$2500</span>
+                <p class="card-text2">
+                  <strong>Contiene:</strong> 1 (una) Copita menstrual, 2 (dos)
+                  toallas y 2 (dos) toallitas de tela, unguento menstrual, bolsa
+                  relajante, bolsita de tela para guardas productos.
+                </p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div
+                title="Jabones vegetales de varios perfumes naturales"
+                class="cover cover-small"
+                style="background-image:url(https://cdn.glitch.com/5af3e49d-8e32-43d7-b550-d37aae4808f2%2Frsz_aurelia-dubois-6j0musms4fq-unsplash.jpg?v=1622644764204)"
+              ></div>
+              <div class="card-body">
+                <h5 class="card-title">Box nº3: productos de baño</h5>
+                <span class="badge bg-info text-dark">$1800</span>
+                <p class="card-text2">
+                  <strong>Contiene:</strong> un jabón vegetal, un shampoo y un
+                  enjuague sólido, una jabonera de bambú, una esponga vegetal y
+                  una afeitadora metálica con 6 (seis) hojas.
+                </p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div
+                title="Hombre poniendose un Productos faciales"
+                class="cover cover-small"
+                style="background-image:url(https://cdn.glitch.com/5af3e49d-8e32-43d7-b550-d37aae4808f2%2Frsz_safia-shakil-hluyfijgytm-unsplash.jpg?v=1622646398764)"
+              ></div>
+              <div class="card-body">
+                <h5 class="card-title">Box nº4: productos faciales</h5>
+                <span class="badge bg-info text-dark">$2600</span>
+                <p class="card-text2">
+                  <strong>Contiene:</strong> gel de limpieza facial, toallitas
+                  desmaquillantes, crema nutritiva, bálsamo labial, cerum para
+                  pestañas y una mascarilla facial.
+                </p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>Derechos reservados 2022-Ana Lucia Marzocca</p>
+  </footer>
+</html>
